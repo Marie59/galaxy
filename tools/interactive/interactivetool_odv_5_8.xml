@@ -1,10 +1,10 @@
 <tool id="interactive_tool_odv" tool_type="interactive" name="ODV" version="@VERSION@">
     <description>interactive plotting tool for geo-referenced data</description>
     <macros>
-    <token name="@VERSION@">v5.8</token>
+    <token name="@VERSION@">5.8.0</token>
     </macros>
     <requirements>
-        <container type="docker">odv-container</container>
+        <container type="docker">quay.io/bgruening/odv-headless:v@VERSION@</container>
     </requirements>
     <entry_points>
         <entry_point name="ODV" requires_domain="True">
